@@ -7,7 +7,7 @@ import { SidebarData } from "./SidebarData";
 import { IconContext } from "react-icons";
 import "./navbar.css"
 
-import Logo from "../images/ceylonetranslater_logo.png";
+import Logo from "../images/Mlogo1.jpg";
 
 
 function Navbar() {
