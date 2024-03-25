@@ -1,0 +1,92 @@
+/* Styling for the container */
+.pdf-Translate {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Styling for the heading */
+  .pdf-Translate h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the file input section */
+  .getpdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .file-input {
+    margin-right: 10px;
+  }
+  
+  
+  /* Styling for the upload button */
+  .handle-upload-upload-button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  /* Styling for the translated text */
+  .displayTransaltedText p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    min-height: 7rem;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styling for the download button */
+  .download-Pdf-button {
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Optional: Hover effect for buttons */
+  .handle-upload-upload-button:hover,
+  .download-Pdf-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* ======================================================= */
+  /* Styling for the file input element */
+.file-input-choose-file {
+    display: none;
+  }
+  
+  /* Custom styling for the file input container */
+  .file-input-label {
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 4rem;
+    cursor: pointer;
+    border:black ;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style for the file input label text */
+  .file-input-label-text {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Styling for the file input container on hover */
+  .file-input-label:hover {
+    background-color: #0056b3;
+  }

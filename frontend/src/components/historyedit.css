@@ -1,0 +1,77 @@
+.edit-page{
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main{
+    display: flex; /* Make the transinputtext divs flex containers */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    flex: 1; /* Distribute available space equally */
+}
+
+.edit-page-box{
+    display: flex;
+    width: 80%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#root{
+    margin-top: 80px;
+}
+
+.container-edit{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.edit-page-translate-button{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    font-size: 18px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+ 
+}
+
+.edit-page-cancle-button{
+    width: 200px;
+    height: 50px;
+    margin-left: 400px;
+    color: black;
+    border-radius: 20px;
+    border-style: solid;
+    background-color: #ffffff;
+    border-color: black;
+    font-size: 18px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+.history-edit-title{
+    position: relative;
+    top: -20px;
+}
+
+.edit-page-bottom-buttons{
+    margin-top: 50px;
+}
