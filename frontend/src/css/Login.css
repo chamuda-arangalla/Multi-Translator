@@ -1,0 +1,73 @@
+
+
+.Card {
+    margin-top: 70px;
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 0px 30px 50px 0 rgba(0,0,0,0.3);
+    padding: 30px;
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.control {
+    border-radius: 50px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 280px;
+    height: 50px; 
+}
+
+.form-outline input[type=email]{
+    padding-left:53px ;
+}
+
+.form-outline img{
+    position: absolute;
+    top: 453px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    width: 45px;
+    padding: 2px 4px;
+    margin: 7px;
+}
+
+.form-outline2 input[type=password]{
+    padding-left:53px ;
+}
+
+.form-outline2 img{
+    position: absolute;
+    top: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    width: 35px;
+    padding: 2px 4px;
+    margin: 14px;
+}
+
+.btn-secondary {
+    border-radius: 40px 40px 40px 40px; 
+    background-color: #000000;
+}
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #bdbdbd;
+}
+
+.Social {
+    margin: 20px;
+}
+

@@ -1,0 +1,117 @@
+.RCard {
+    margin-top: 20px;
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 0px 30px 50px 0 rgba(0,0,0,0.3);
+    padding: 30px;
+    background-color: #fff;
+}
+
+.Rcard-title {
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.control {
+    border-radius: 50px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 280px;
+    height: 50px; 
+}
+
+.Rform-outline input[type=text]{
+    padding-left:53px ;
+}
+
+.Rform-outline img{
+    position: absolute;
+    top: 403px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    width: 45px;
+    padding: 2px 4px;
+    margin: 7px;
+}
+
+.Rform-outline2 input[type=text]{
+    padding-left:53px ;
+}
+
+.Rform-outline2 img{
+    position: absolute;
+    top: 469px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    width: 45px;
+    padding: 2px 4px;
+    margin: 7px;
+}
+
+.Rform-outline3 input[type=number]{
+    padding-left:53px ;
+}
+
+.Rform-outline3 img{
+    position: absolute;
+    top: 535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    width: 38px;
+    padding: 2px 4px;
+    margin: 9px;
+}
+
+.Rform-outline4 input[type=email]{
+    padding-left:53px ;
+}
+
+.Rform-outline4 img{
+    position: absolute;
+    top: 605px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    width: 40px;
+    padding: 2px 4px;
+    margin: 9px;
+}
+
+.Rform-outline5 input[type=password]{
+    padding-left:53px ;
+}
+
+.Rform-outline5 img{
+    position: absolute;
+    top: 661px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    width: 35px;
+    padding: 2px 4px;
+    margin: 12px;
+}
+
+.Rform-outline6 input[type=password]{
+    padding-left:53px ;
+}
+
+.Rform-outline6 img{
+    position: absolute;
+    top: 726px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    width: 35px;
+    padding: 2px 4px;
+    margin: 12px;
+}
