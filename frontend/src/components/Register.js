@@ -156,7 +156,7 @@ export default function Register() {
  
                     <div class="Rform-outline6 mb-4">
                         {/*<label for="password" class="form-label">Password</label>*/}
-                        <input type="password" class="control" id="password" placeholder="Confirm Password*" required />
+                        <input type="password" class="control" id="password" placeholder="Confirm Password*" onChange={(e) => setPassword(e.target.value)} required />
                         <img src={ps_png} className="img-fluid rounded-start"  alt="Login" />
                     </div>
                     {error && <div className="alert alert-danger">{error}</div>}

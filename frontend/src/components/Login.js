@@ -134,11 +134,11 @@ export default function Login() {
                                     {/*<a href="/register" className="btn btn-primary">Register</a>*/}
                                 </div>
  
-                                {/*<div className="text-center">
-                                    <span class="text-center fw-bold mx-3 mb-0">
+                                <div className="text-center">
+                                    <span class="text-center fw-bold mx-4 mb-0">
                                          Don't have an account? <Link to="/Register">Register</Link>
                                     </span>
-                                   </div>*/}
+                                   </div>
  
                                 <div class="divider d-flex align-items-center my-1">
                                       <p class="text-center fw-bold mx-3 mb-0">or continue with</p>

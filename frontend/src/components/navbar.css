@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,7 +43,12 @@
   margin-bottom: 10px;
   width: 100%;
   border: none;
-  /* border-color: black; */
+  background-color: #55bd50;
+  /* border-color: #04195d; */
+ /* background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;*/
+  
 }
 
 .menu-bars {
@@ -38,7 +56,7 @@
   margin-left: -190px;
   font-size: 2rem;
   background:none;
-  color: black;
+  color: #04195d;
 }
 
 .menu-bars2 {
@@ -46,11 +64,11 @@
   margin-left: 20px;
   font-size: 2rem;
   background:none;
-  color: black;
+  color: #04195d;
 }
 
 .nav-menu {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(106, 238, 117);
   width: 300px;
   height: 100vh;
   display: flex;
@@ -61,7 +79,7 @@
   transition: 850ms;
   z-index: 1001;
   /* border-right: solid 2px;
-  border-color: black; */
+  border-color: #04195d; */
   box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3);
 
 }
@@ -83,7 +101,7 @@
 
 .nav-text a {
   text-decoration: none;
-  color: black;
+  color: #04195d;
   font-size: 18px;
   width: 95%;
   height: 100%;
@@ -94,7 +112,7 @@
 }
 
 .nav-text a:hover {
-  background-color: black;
+  background-color: #04195d;
   color: #ffffff;
 }
 
@@ -105,7 +123,7 @@
 
 .navbar-toggle {
  
- width: 100%;
+  width: 100%;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -125,11 +143,154 @@ span {
   
   border: solid 2px;
   border-radius: 5px;
+  margin-left: -175px;
+  margin-right: 130px;
 }
 
 .sidebarlogo{
   border: solid 2px;
-  margin-left: 180px;
+  margin-left: 160px;
   border-radius: 5px;
 
 }
+
+.nav-item {
+  font-weight: 500;
+}
+
+.Login {
+  margin-top: -8px;
+}
+.LoginI {
+  position: absolute;
+  top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  width: 40px;
+  padding: 2px 4px;
+  margin: -1px;
+}
+
+.Reg {
+  margin-top: -8px;
+}
+.RegI {
+  position: absolute;
+  top: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  width: 43px;
+  padding: 2px 4px;
+  margin: 5px;
+}
+
+
+.Community {
+   margin-right: 1030px;
+   margin-top: -2px;
+}
+
+.hom {
+  margin-top: -10px;
+  margin-right: -12px;
+}
+
+.homI {
+  position: absolute;
+  top: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  width: 50px;
+  padding: 2px 4px;
+  margin: 9px;
+}
+
+.Trans {
+  margin-top: 14px;
+  margin-right: 2px;
+}
+
+.transI {
+  position: absolute;
+  top: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  width: 54px;
+  padding: 2px 4px;
+  margin: 23px;
+}
+
+.com {
+  margin-top: -6px;
+  margin-left: -15px;
+}
+
+.comI {
+  position: absolute;
+  top: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  width: 52px;
+  padding: 2px 4px;
+  margin: 12px;
+}
+
+.dropdown {
+  top: 51px;
+}
+
+.dropdown-menu {
+  background-color: rgb(106, 238, 117);
+}
+
+.dropdown-menu a:hover {
+  background-color: #04195d;
+  color: #ffffff;
+}
+
+.profile {
+  margin-left: 200px;
+}
+
+.MyAcc {
+  position: absolute;
+  top: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  width: 40px;
+  padding: 2px 4px;
+  margin: 5px;
+}
+
+.logout {
+  position: absolute;
+  top: 6.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  width: 40px;
+  padding: 2px 4px;
+  margin: 7px;
+}
+
+.nav-item {
+  margin-top: 65px;
+}
+
+.Lin {
+  margin-top: -10px;
+}
+
