@@ -43,7 +43,8 @@
   margin-bottom: 10px;
   width: 100%;
   border: none;
-  background-color: #55bd50;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   /* border-color: #04195d; */
  /* background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
   background-size: 180% 180%;
