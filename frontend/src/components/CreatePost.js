@@ -85,31 +85,38 @@ function CreatePost() {
 
   return (
     <div class="container mt-5">
-      { <button className="backbutton_post" onClick={() => {navigate('/allpost')}}>back</button>}
-       <div className="card" style={{width: "50rem", height: "50rem", backgroundColor: "lightblue"}}>
-        
-    <div class="row">
-        <div class="col-md-8 mx-auto">
-            <h2 class="text-center mb-4">Create New Post</h2>
-            <form onSubmit={handleSubmit}>
-                <div class="mb-3">
-                    <label htmlFor="title" class="form-label"><strong>Title:</strong></label>
-                    <input type="text" class="form-control" id="title" value={title} onChange={handleTitleChange} />
-                    {titleError && <p class="text-danger mt-2">{titleError}</p>}
+        <button className="backbutton_post" onClick={() => {navigate('/allpost')}}>back</button>
+        <div className="card" style={{width: "50rem", height: "50rem", backgroundColor: "#FFFFED"}}>
+            <div class="row">
+                <div style={{ padding: '20px', maxWidth: '1500px', margin: '0 auto' }}>
+                    <div class="col-md-8 mx-auto">
+                        <h2 style={{ textAlign: 'left', marginBottom: '20px', fontSize: '30px' }}>
+                            <strong>Create New Post</strong>
+                        </h2>
+                        <form onSubmit={handleSubmit}>
+                            <div class="mb-3">
+                                <label htmlFor="title" class="form-label"><strong>Title:</strong></label>
+                                <input type="text" class="form-control" id="title" value={title} onChange={handleTitleChange} />
+                                {titleError && <p class="text-danger mt-2">{titleError}</p>}
+                            </div>
+                            <div class="mb-3">
+                                <label htmlFor="content" class="form-label"><strong>Content:</strong></label>
+                                <textarea class="form-control" id="content" value={content} onChange={handleContentChange} rows="8"></textarea>
+                                {contentError && <p class="text-danger mt-2">{contentError}</p>}
+                            </div>
+                            <button type="submit" 
+                                class="btn btn-primary" 
+                                style={{ backgroundColor: 'black', color: 'white', width: '200px', marginBottom: '20px', padding: '5px 5px', fontSize: '15px' }}>
+                                Create Post
+                            </button>
+                        </form>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label htmlFor="content" class="form-label"><strong>Content:</strong></label>
-                    <textarea class="form-control" id="content" value={content} onChange={handleContentChange} rows="8"></textarea>
-                    {contentError && <p class="text-danger mt-2">{contentError}</p>}
-                </div>
-                <button type="submit" class="btn btn-primary">Create Post</button>
-            </form>
+            </div>
         </div>
     </div>
-    </div>
-</div>
+);
 
-  );
 }
 
 export default CreatePost;

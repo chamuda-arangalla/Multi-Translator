@@ -45,12 +45,12 @@ function AllPost() {
 
   return (
     <div style={{ padding: '20px', backgroundColor: '#f8f9fa' }}>
-    <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-      <h2 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '28px' }}>
+    <div style={{ maxWidth: '1500px', marginleft: '0 auto' }}>
+      <h2 style={{ textAlign: 'left', marginBottom: '20px', fontSize: '30px' }}>
         Explore the Articles
       </h2>
       <button
-        style={{ display: 'block', margin: '0 auto', marginBottom: '20px', padding: '10px 20px', fontSize: '18px' }}
+        style={{ backgroundColor: 'black', color: 'white', width: '700px', marginBottom: '20px', padding: '5px 20px', fontSize: '18px' }}
         className="btn btn-primary"
         onClick={() => {
           navigate(`/createpost`);
@@ -59,7 +59,7 @@ function AllPost() {
         Create Post
       </button>
 
-      <div style={{ marginBottom: '20px' }} className="input-group">
+      <div style={{ marginBottom: '20px', width: '700px' }} className="input-group">
         <input
           type="text"
           style={{ flex: '1', padding: '10px', fontSize: '16px' }}
@@ -69,7 +69,7 @@ function AllPost() {
           onChange={(e) => setSearchQuery(e.target.value)}
         />
         <button
-          style={{ marginLeft: '10px', fontSize: '16px' }}
+          style={{ backgroundColor: 'black',color: 'red', marginLeft: '10px', fontSize: '16px' }}
           className="btn btn-danger"
           onClick={() => setSearchQuery('')}
         >
@@ -81,13 +81,13 @@ function AllPost() {
 
       <div>
         {filteredPosts.map((post) => (
-          <div key={post._id} style={{ marginBottom: '20px', padding: '15px', border: '1px solid #ccc', borderRadius: '5px' }}>
-            <h5 style={{ fontSize: '22px', marginBottom: '10px' }}>
+          <div key={<strong>post._id</strong>} style={{ marginBottom: '20px',backgroundColor: '#FFFFED', padding: '15px', border: '4px solid #ccc', borderRadius: '5px' }}>
+            <h5 style={{ fontSize: '25px', marginBottom: '10px' }}>
               <a href="#" style={{ color: '#343a40', textDecoration: 'none' }} onClick={() => navigateToSelectedPost(post._id)}>
                 {post.title}
               </a>
             </h5>
-            <p style={{ fontSize: '16px', marginBottom: '10px' }}>
+            <p style={{ fontSize: '18px', marginBottom: '10px' }}>
               {post.content.length > 200 ? (
                 <>
                   {post.content.slice(0, 200)}
@@ -99,7 +99,7 @@ function AllPost() {
                   </span>
                 </>
               ) : (
-                <pre style={{ whiteSpace: 'pre-wrap', fontSize: '16px', margin: '0' }}>{post.content}</pre>
+                <pre style={{ whiteSpace: 'pre-wrap', fontSize: '18px', margin: '0' }}>{post.content}</pre>
               )}
             </p>
             <div style={{ fontSize: '14px', color: '#868e96' }}>by: {post.name}</div>

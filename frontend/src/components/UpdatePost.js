@@ -48,12 +48,17 @@ function UpdatePost(props) {
 
   return (
     <div class="container mt-5">
-      { <button className="backbutton_post" onClick={() => {navigate('/allpost')}}>back</button>
-     }
-      <div className="card" style={{width: "50rem", height: "50rem", backgroundColor: "lightblue"}}>
-    <div class="container mt-5">
-        <div class="col-md-6">
-            <h2 class="text-center mb-4">Update Post</h2>
+      
+      { <button className="backbutton_post" onClick={() => {navigate('/allpost')}}>back</button>}
+      <div className="card" style={{width: "50rem", height: "50rem", backgroundColor: "#FFFFED"}}>
+        
+      <div class="row">
+      <div style={{ padding: '20px' }}>
+      <div style={{ maxWidth: '1500px', marginleft: '0 auto' }}>
+        <div class="col-md-8 mx-auto">
+            <h2 
+            style={{ textAlign: 'left', marginBottom: '20px', fontSize: '30px' }}
+            class="text-center mb-4"><strong>Update Post</strong></h2>
             <form>
                 <div class="mb-3">
                     <label for="title" class="form-label"><strong>Title:</strong></label>
@@ -64,10 +69,14 @@ function UpdatePost(props) {
                     <textarea class="form-control" id="content" name="content" style={{ width: "30rem", height:"20rem"}} value={updatedPost.content} onChange={handleInputChange} rows="6"></textarea>
                 </div>
                 <div class="mb-3 text-center">
-                    <button type="button" class="btn btn-primary mx-auto" onClick={handleSubmit}>Update</button>
+                    <button type="button" 
+                    class="btn btn-primary mx-auto" onClick={handleSubmit}
+                    style={{ backgroundColor: 'black',margin: 'auto', color: 'white', width: '200px', marginBottom: '20px', padding: '5px 5px', fontSize: '15px' }}>Update</button>
                 </div>
             </form>
         </div>
+      </div>
+    </div>
     </div>
     </div>
 </div>

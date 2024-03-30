@@ -245,7 +245,7 @@ function SelectedPost(props) {
     return (
     <div class="container mt-5">
         { <button className="backbutton_post" onClick={() => {navigate('/allpost')}}>back</button>}
-    <div className="card" style={{width: "50rem", height: "50rem", backgroundColor: "lightblue"}}>  
+    <div className="card" style={{width: "50rem", height: "50rem", backgroundColor: "#FFFFED"}}>  
         <div class="container mt-5">
           
     <div class="row">
@@ -259,12 +259,13 @@ function SelectedPost(props) {
 
             <div class="mt-4">
             {post.name === name && (
-                <button class="btn btn-danger me-2" onClick={handleDeletePost}>
+                <button class="btn btn-danger me-2" style={{ backgroundColor: 'white', color: 'red' }}
+                className="btn btn-primary" onClick={handleDeletePost}>
                     Delete Post
                 </button>
                 )}
                 {post.name === name && (
-                <button class="btn btn-primary" onClick={handleUpdatePost}>
+                <button class="btn btn-primary" style={{ backgroundColor: 'black', color: 'white', marginLeft: '10px'}} onClick={handleUpdatePost}>
                     Edit Post
                 </button>
                  )}
@@ -287,7 +288,7 @@ function SelectedPost(props) {
                     placeholder="Write a comment..."
                     style={{ width: "30rem", height:"5rem"}}
                 />
-                <button class="btn btn-primary mt-2" onClick={handleSubmitComment}>
+                <button class="btn btn-primary mt-2" style={{ backgroundColor: 'black', color: 'white' }} onClick={handleSubmitComment}>
                     Add Comment
                 </button>
             </div>
