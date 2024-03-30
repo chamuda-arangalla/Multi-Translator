@@ -9,7 +9,7 @@ import "./navbar.css"
 
 import homeI_png from '../images/homeI.png'
 import trans1_png from '../images/trans1.png'
-// import com1_png from '../images/com1.png'
+import com_png from '../images/commi.png'
 
 import Reg_png from '../images/Reg.png'
 import MyAcc_png from '../images/MyAcc.png'
@@ -124,7 +124,7 @@ const showSidebar = () => setSidebar(!sidebar);
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="home"><IoLanguage/>&nbsp;Translate</a>
                                 <a class="dropdown-item" href="imageRecognition"><MdOutlineImageSearch/>&nbsp;Image to Text Translation</a>
-                                <a class="dropdown-item" href="voicetotexttage"><MdConstruction/>&nbsp;Voice To Text</a>
+                                {/* <a class="dropdown-item" href="voicetotexttage"><MdConstruction/>&nbsp;Voice To Text</a> */}
                                 {/*<a class="dropdown-item" href="translatorhistory"><FaHistory/>&nbsp;My History</a>*/}
                                 
                             </div>
@@ -139,7 +139,7 @@ const showSidebar = () => setSidebar(!sidebar);
                                 Community
                                 </button>
                             </a>
-                            <a class="nav-link" href="/allpost"><img  className="comI img-fluid rounded-start" alt="Login" /></a>
+                            <a class="nav-link" href="/allpost"><img src={com_png} className="comI img-fluid rounded-start" alt="Login" /></a>
                         </li>
                         
                         <li class="profile nav-item">
