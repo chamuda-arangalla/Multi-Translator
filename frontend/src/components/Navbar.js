@@ -124,7 +124,7 @@ const showSidebar = () => setSidebar(!sidebar);
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="home"><IoLanguage/>&nbsp;Translate</a>
                                 <a class="dropdown-item" href="imageRecognition"><MdOutlineImageSearch/>&nbsp;Image to Text Translation</a>
-                                <a class="dropdown-item" href="voicetotexttage"><MdConstruction/>&nbsp;Voice To Text</a>
+                                {/* <a class="dropdown-item" href="voicetotexttage"><MdConstruction/>&nbsp;Voice To Text</a> */}
                                 {/*<a class="dropdown-item" href="translatorhistory"><FaHistory/>&nbsp;My History</a>*/}
                                 
                             </div>

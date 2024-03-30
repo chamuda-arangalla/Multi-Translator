@@ -23,12 +23,12 @@ export const SidebarData = [
     icon: <MdOutlineImageSearch />,
     cName: "nav-text",
   },
-  {
-    title: "Voice To Text",
-    path: "/voicetotexttage",
-    icon: <MdConstruction />,
-    cName: "nav-text",
-  },
+  // {
+  //   title: "Voice To Text",
+  //   path: "/voicetotexttage",
+  //   icon: <MdConstruction />,
+  //   cName: "nav-text",
+  // },
   {
     title: "Community",
     path: "/allpost",
