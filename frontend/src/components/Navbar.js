@@ -117,7 +117,7 @@ const showSidebar = () => setSidebar(!sidebar);
                             </a>
                            </li>*/}
 
-                        <div class="dropdown">
+                        <div class="dropdown" >
                             <button class="Trans btn btn-green dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Translation
                             </button>

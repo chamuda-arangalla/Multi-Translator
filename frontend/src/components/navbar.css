@@ -251,11 +251,11 @@ span {
 }
 
 .dropdown-menu {
-  background-color: rgb(106, 238, 117);
+  background-color: "white";
 }
 
 .dropdown-menu a:hover {
-  background-color: #04195d;
+  background-color: #700c89;
   color: #ffffff;
 }
 
