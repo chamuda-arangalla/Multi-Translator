@@ -6,6 +6,7 @@ import u_png from '../images/u.png'
 import e_png from '../images/e.png'
 import EM_png from '../images/EM.png'
 import Role_png from '../images/Role.png'
+import '../css/FogotPassword.css'
  
 //import Styles from '../styles/Register.module.css'
 import { useState } from 'react';
