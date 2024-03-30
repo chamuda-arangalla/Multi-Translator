@@ -9,7 +9,7 @@ import "./navbar.css"
 
 import homeI_png from '../images/homeI.png'
 import trans1_png from '../images/trans1.png'
-// import com1_png from '../images/com1.png'
+import com_png from '../images/commi.png'
 
 import Reg_png from '../images/Reg.png'
 import MyAcc_png from '../images/MyAcc.png'
@@ -139,7 +139,7 @@ const showSidebar = () => setSidebar(!sidebar);
                                 Community
                                 </button>
                             </a>
-                            <a class="nav-link" href="/allpost"><img  className="comI img-fluid rounded-start" alt="Login" /></a>
+                            <a class="nav-link" href="/allpost"><img src={com_png} className="comI img-fluid rounded-start" alt="Login" /></a>
                         </li>
                         
                         <li class="profile nav-item">
