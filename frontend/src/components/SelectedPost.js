@@ -242,13 +242,13 @@ function SelectedPost(props) {
     
 
 
-
     return (
-        
+    <div class="container mt-5">
+        { <button className="backbutton_post" onClick={() => {navigate('/allpost')}}>back</button>}
+    <div className="card" style={{width: "50rem", height: "50rem", backgroundColor: "lightblue"}}>  
         <div class="container mt-5">
           
     <div class="row">
-    {/* <button className="backbutton_post" onClick={() => {navigate('/allpost')}}>back</button> */}
         <div class="col-md-8 mx-auto">
             <h1>{post.title}</h1>
             <pre style={{ whiteSpace: 'pre-wrap' }}>{post.content}</pre>
@@ -285,6 +285,7 @@ function SelectedPost(props) {
                     rows="4"
                     class="form-control"
                     placeholder="Write a comment..."
+                    style={{ width: "30rem", height:"5rem"}}
                 />
                 <button class="btn btn-primary mt-2" onClick={handleSubmitComment}>
                     Add Comment
@@ -346,7 +347,8 @@ function SelectedPost(props) {
         </div>
     </div>
 </div>
-
+</div>
+</div>
     );
 
 }

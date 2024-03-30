@@ -48,21 +48,23 @@ function UpdatePost(props) {
 
   return (
     <div class="container mt-5">
-      <div className="card" style={{width: "50rem", height: "35rem"}}>
-    <div class="row justify-content-center">
+      { <button className="backbutton_post" onClick={() => {navigate('/allpost')}}>back</button>
+     }
+      <div className="card" style={{width: "50rem", height: "50rem", backgroundColor: "lightblue"}}>
+    <div class="container mt-5">
         <div class="col-md-6">
             <h2 class="text-center mb-4">Update Post</h2>
             <form>
                 <div class="mb-3">
-                    <label for="title" class="form-label">Title:</label>
+                    <label for="title" class="form-label"><strong>Title:</strong></label>
                     <input type="text" class="form-control" id="title" name="title" style={{ width: "30rem"}} value={updatedPost.title} onChange={handleInputChange} />
                 </div>
                 <div class="mb-3">
-                    <label for="content" class="form-label">Content:</label>
-                    <textarea class="form-control" id="content" name="content" style={{ width: "30rem", height:"18rem"}} value={updatedPost.content} onChange={handleInputChange} rows="6"></textarea>
+                    <label for="content" class="form-label"><strong>Content:</strong></label>
+                    <textarea class="form-control" id="content" name="content" style={{ width: "30rem", height:"20rem"}} value={updatedPost.content} onChange={handleInputChange} rows="6"></textarea>
                 </div>
                 <div class="mb-3 text-center">
-                    <button type="button" class="btn btn-primary" onClick={handleSubmit}>Update</button>
+                    <button type="button" class="btn btn-primary mx-auto" onClick={handleSubmit}>Update</button>
                 </div>
             </form>
         </div>

@@ -85,19 +85,20 @@ function CreatePost() {
 
   return (
     <div class="container mt-5">
-       <div className="card" style={{width: "50rem", height: "35rem", backgroundColor: "lightblue"}}>
+      { <button className="backbutton_post" onClick={() => {navigate('/allpost')}}>back</button>}
+       <div className="card" style={{width: "50rem", height: "50rem", backgroundColor: "lightblue"}}>
         
     <div class="row">
         <div class="col-md-8 mx-auto">
-            <h2 class="text-center mb-4">Create a New Post</h2>
+            <h2 class="text-center mb-4">Create New Post</h2>
             <form onSubmit={handleSubmit}>
                 <div class="mb-3">
-                    <label htmlFor="title" class="form-label">Title:</label>
+                    <label htmlFor="title" class="form-label"><strong>Title:</strong></label>
                     <input type="text" class="form-control" id="title" value={title} onChange={handleTitleChange} />
                     {titleError && <p class="text-danger mt-2">{titleError}</p>}
                 </div>
                 <div class="mb-3">
-                    <label htmlFor="content" class="form-label">Content:</label>
+                    <label htmlFor="content" class="form-label"><strong>Content:</strong></label>
                     <textarea class="form-control" id="content" value={content} onChange={handleContentChange} rows="8"></textarea>
                     {contentError && <p class="text-danger mt-2">{contentError}</p>}
                 </div>
